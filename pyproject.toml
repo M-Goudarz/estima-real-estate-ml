@@ -5,7 +5,13 @@ version = "0.1.0"
 description = "An end-to-end machine learning project for Iranian real estate price prediction."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -16,3 +22,8 @@ packages = ["src/estima"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
