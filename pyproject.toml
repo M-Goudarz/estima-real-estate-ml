@@ -6,11 +6,14 @@ description = "An end-to-end machine learning project for Iranian real estate pr
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "catboost>=1.2.10",
+    "lightgbm>=4.7.0",
     "matplotlib>=3.11.2",
     "numpy>=2.5.4",
     "pandas>=3.1.1",
     "scikit-learn>=1.9.1",
     "seaborn>=0.13.2",
+    "xgboost>=3.4.1",
 ]
 
 [build-system]
